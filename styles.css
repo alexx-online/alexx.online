@@ -1,0 +1,89 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive; /* Pixelated terminal font */
+    background-color: #000000; /* Full black background */
+    color: #FFFFFF; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative; /* To help position the top-left element */
+}
+
+/* Title Link (Alexx as clickable text) */
+.title-link {
+    font-size: 3rem; /* Slightly smaller to give a terminal feel */
+    text-decoration: none;
+    color: #FFFFFF; /* White text */
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transform for more dramatic hover effect */
+}
+
+.title-link:hover {
+    color: #808080; /* Grey for dramatic hover effect */
+    transform: scale(1.1); /* Slight zoom-in effect for hover */
+}
+
+/* List of DSPs */
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s ease; /* Same transition effect */
+}
+
+ul li a:hover {
+    color: #808080; /* Grey on hover */
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+/* Footer Styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.left-footer {
+    margin-left: 20px;
+}
+
+.right-footer {
+    margin-right: 20px;
+}
+
+/* Home Text Icon Position */
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.home-link {
+    color: #FFFFFF; /* White text color for "home" */
+    font-size: 1rem; /* Smaller font size for "home" */
+    text-decoration: none; /* No underline */
+    font-weight: normal; /* No bold */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home-link:hover {
+    color: #808080; /* Grey on hover */
+    transform: scale(1.1); /* Zoom-in effect */
+}
