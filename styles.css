@@ -34,7 +34,7 @@ body {
 
 /* Hover effect for logo (home symbol) */
 .home-symbol:hover {
-  transform: scale(1.1); /* Makes the logo 10% larger */
+  transform: scale(1.1) rotate(10deg);
 }
 
 /* Home button image on page2 */
