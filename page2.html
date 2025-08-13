@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alexx</title>
 
   <!-- Favicon -->
   <link rel="icon" href="https://alexx.online/ALEXXBEAN_SymbolWhite_300.jpg" type="image/jpeg" />
 
-  <!-- SEO Meta Tags -->
+  <!-- SEO -->
   <meta name="description" content="Official website for recording artist Alexx. Links to pop-punk, alternative rock, and emo rap music streaming platforms." />
   <meta name="keywords" content="Alexx, music, pop-punk, alternative rock, emo rap, Apple Music, Spotify, Amazon Music, Tidal, YouTube Music" />
   <meta name="author" content="Alexx" />
@@ -32,8 +32,8 @@
 <body>
 
   <div class="top-right">
-    <a href="index.html">
-      <img src="ALEXXBEAN_LogoWhite_300.png" alt="Alexx Name Logo" class="name-logo" />
+    <a href="index.html" aria-label="Go back home">
+      <img src="home-icon.png" alt="Home" class="home-icon" />
     </a>
   </div>
 
@@ -47,12 +47,12 @@
     </ul>
   </div>
 
-  <div class="footer centered-footer">
+  <footer class="footer">
     &copy; <span id="year"></span>
-  </div>
+  </footer>
 
   <script>
-    document.getElementById('year').innerText = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
 </body>

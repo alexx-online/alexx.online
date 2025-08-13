@@ -11,26 +11,28 @@ body {
   height: 100vh;
   text-align: center;
   position: relative;
+  flex-direction: column;
 }
 
 /* Homepage Logo */
 .main-logo {
-  max-width: 200px;
+  max-width: 180px;
   width: 100%;
   height: auto;
 }
 
-/* Music page logo top-right */
+/* Music page top-right home icon */
 .top-right {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-.name-logo {
-  max-width: 100px;
-  width: 100%;
+.home-icon {
+  max-width: 40px;
   height: auto;
+  filter: invert(100%);
+  cursor: pointer;
 }
 
 /* DSP List */
@@ -39,6 +41,7 @@ ul {
   padding: 0;
   font-size: 1.2rem;
   font-family: sans-serif;
+  margin-top: 40px;
 }
 
 ul li {
@@ -62,9 +65,10 @@ ul li a:hover {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 8px 0;
   font-size: 0.75rem;
   font-family: sans-serif;
   color: #FFFFFF;
   text-align: center;
+  background: transparent;
 }
