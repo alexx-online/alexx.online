@@ -1,57 +1,56 @@
 /* Global styles */
 body {
   margin: 0;
-  padding: 0 20px 60px;
-  font-family: sans-serif; /* System sans-serif font */
+  padding: 0 20px 60px; /* Padding bottom for footer visibility on mobile */
+  font-family: Arial, Helvetica, sans-serif; /* Replaced Google Fonts */
   background-color: #000;
   color: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
   text-align: center;
   position: relative;
 }
 
-/* Container for centered content */
+/* Container centers content vertically and horizontally */
 .container {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 100%; /* Ensure container is not too wide */
+  overflow: hidden; /* Prevent content overflow */
 }
 
-/* Homepage logo */
+/* Home symbol image (larger version) */
 .home-symbol {
-  width: 250px;
+  width: 160px; /* Larger size */
   height: auto;
-  transition: transform 0.3s ease;
-}
-
-.home-symbol:hover {
-  transform: rotate(3deg) scale(1.05);
+  max-width: 100%; /* Make sure the image doesn't exceed container width */
 }
 
 /* Home button image on page2 */
 .home-button {
-  width: 104px;
+  width: 72px; /* Larger than before */
   height: auto;
 }
 
-/* Title link */
+/* Title link style (if you want to keep it somewhere else) */
 .title-link {
   text-decoration: none;
   color: #fff;
 }
 
-/* DSP list */
+/* DSP list styling */
 .dsp-list {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   max-width: 400px;
-  font-family: sans-serif; /* System font */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
 }
 
@@ -70,21 +69,14 @@ body {
   transform: scale(1.1);
 }
 
-/* Disabled placeholder links */
-.disabled-link {
-  color: #555;
-  pointer-events: none;
-  cursor: default;
-  text-decoration: line-through;
-}
-
-/* Footer */
+/* Footer styles */
 .footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  font-family: sans-serif; /* System font */
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   background-color: transparent;
   text-align: center;
@@ -92,14 +84,14 @@ body {
   user-select: none;
 }
 
-/* Top-left home button */
+/* Top left container for home button on page2 */
 .top-left {
   position: fixed;
   top: 10px;
   left: 10px;
 }
 
-/* Home link */
+/* Home link styling */
 .home-link {
   display: inline-block;
   text-decoration: none;
@@ -111,19 +103,4 @@ body {
 .home-link:hover {
   color: #888;
   transform: scale(1.1);
-}
-
-/* Responsive tweaks */
-@media (max-width: 600px) {
-  .dsp-list {
-    font-size: 1rem;
-  }
-
-  .home-symbol {
-    width: 100px;
-  }
-
-  .home-button {
-    width: 40px;
-  }
 }
