@@ -1,8 +1,8 @@
 /* Global styles */
 body {
   margin: 0;
-  padding: 0 20px 60px; /* padding bottom for footer visibility on mobile */
-  font-family: 'Press Start 2P', cursive;
+  padding: 0 20px 60px;
+  font-family: sans-serif; /* System sans-serif font */
   background-color: #000;
   color: #fff;
   display: flex;
@@ -13,7 +13,7 @@ body {
   position: relative;
 }
 
-/* Container centers content vertically and horizontally */
+/* Container for centered content */
 .container {
   flex-grow: 1;
   display: flex;
@@ -22,32 +22,36 @@ body {
   flex-direction: column;
 }
 
-/* Home symbol image */
+/* Homepage logo */
 .home-symbol {
-  width: 120px; /* 20% bigger than before (~100px) */
+  width: 120px;
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+.home-symbol:hover {
+  transform: rotate(3deg) scale(1.05);
 }
 
 /* Home button image on page2 */
 .home-button {
-  width: 52px; /* 30% bigger than 40px */
+  width: 52px;
   height: auto;
 }
 
-/* Title link style (if you want to keep it somewhere else) */
+/* Title link */
 .title-link {
   text-decoration: none;
   color: #fff;
 }
 
-/* DSP list styling */
+/* DSP list */
 .dsp-list {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   max-width: 400px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif; /* System font */
   font-size: 1.2rem;
 }
 
@@ -66,14 +70,21 @@ body {
   transform: scale(1.1);
 }
 
-/* Footer styles */
+/* Disabled placeholder links */
+.disabled-link {
+  color: #555;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: line-through;
+}
+
+/* Footer */
 .footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif; /* System font */
   font-size: 0.8rem;
   background-color: transparent;
   text-align: center;
@@ -81,14 +92,14 @@ body {
   user-select: none;
 }
 
-/* Top left container for home button on page2 */
+/* Top-left home button */
 .top-left {
   position: fixed;
   top: 10px;
   left: 10px;
 }
 
-/* Home link styling */
+/* Home link */
 .home-link {
   display: inline-block;
   text-decoration: none;
@@ -99,4 +110,20 @@ body {
 
 .home-link:hover {
   color: #888;
-  transform:
+  transform: scale(1.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .dsp-list {
+    font-size: 1rem;
+  }
+
+  .home-symbol {
+    width: 100px;
+  }
+
+  .home-button {
+    width: 40px;
+  }
+}
