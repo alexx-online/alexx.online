@@ -24,7 +24,7 @@ body {
 
 /* Homepage logo */
 .home-symbol {
-  width: 120px;
+  width: 250px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -35,7 +35,7 @@ body {
 
 /* Home button image on page2 */
 .home-button {
-  width: 52px;
+  width: 104px;
   height: auto;
 }
 
