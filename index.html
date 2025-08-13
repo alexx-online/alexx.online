@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alexx</title>
-    
-    <!-- SEO -->
-    <meta name="description" content="Official website for recording artist Alexx." />
-    <meta name="keywords" content="Alexx, pop-punk, alternative rock, emo rap, recording artist, official website" />
-    <meta name="author" content="Alexx" />
-    <meta name="robots" content="index, follow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alexx</title>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Alexx - Official Website" />
-    <meta property="og:description" content="Official website for recording artist Alexx." />
-    <meta property="og:image" content="https://alexx-online.github.io/alexx.online/ALEXXBEAN_SmiliesWhite_300.png" />
-    <meta property="og:url" content="https://alexx.online" />
-    <meta property="og:type" content="website" />
+  <!-- SEO -->
+  <meta name="description" content="Official website for recording artist Alexx." />
+  <meta name="keywords" content="Alexx, pop-punk, alternative rock, emo rap, recording artist, official website" />
+  <meta name="author" content="Alexx" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Alexx - Official Website" />
-    <meta name="twitter:description" content="Official website for recording artist Alexx." />
-    <meta name="twitter:image" content="https://alexx-online.github.io/alexx.online/ALEXXBEAN_SmiliesWhite_300.png" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alexx - Official Website" />
+  <meta property="og:description" content="Official website for recording artist Alexx." />
+  <meta property="og:image" content="https://alexx-online.github.io/alexx.online/ALEXXBEAN_SmiliesWhite_300.png" />
+  <meta property="og:url" content="https://alexx.online" />
+  <meta property="og:type" content="website" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="ALEXXBEAN_SymbolWhite_300.jpg" type="image/jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alexx - Official Website" />
+  <meta name="twitter:description" content="Official website for recording artist Alexx." />
+  <meta name="twitter:image" content="https://alexx-online.github.io/alexx.online/ALEXXBEAN_SmiliesWhite_300.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Default favicon -->
+  <link id="favicon" rel="icon" type="image/png" href="favicon-dark.png" />
+  <script>
+    const favicon = document.getElementById("favicon");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    favicon.href = prefersDark ? "favicon-light.png" : "favicon-dark.png";
+  </script>
 </head>
 <body>
-    <div class="container">
-        <a href="page2.html" class="symbol-link">
-            <img src="ALEXXBEAN_SmiliesWhite_300.png" alt="Alexx Symbol Logo" class="main-symbol" />
-        </a>
-    </div>
+  <div class="container">
+    <a href="page2.html" class="symbol-link">
+      <img src="ALEXXBEAN_SmiliesWhite_300.png" alt="Alexx Symbol Logo" class="main-symbol" />
+    </a>
+  </div>
 
-    <div class="footer">
-        &copy; <span id="year"></span> Alexx
-    </div>
+  <div class="footer">
+    &copy;2025 Alexx
+  </div>
 
-    <script>
-        document.getElementById('year').innerText = new Date().getFullYear();
-    </script>
+  <script>
+    document.getElementById('year')?.innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
