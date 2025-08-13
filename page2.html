@@ -5,44 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alexx Music Links</title>
 
-  <!-- Favicon with dark/light mode support -->
+  <!-- Favicons -->
   <link rel="icon" href="ALEXXBEAN_SymbolWhite_300_dark_32x32.png" media="(prefers-color-scheme: dark)" />
   <link rel="icon" href="ALEXXBEAN_SymbolWhite_300_light_32x32.png" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <div class="top-left">
-    <a href="/" aria-label="Go back home">
-      <img src="ALEXXBEAN_LogoWhite_300.png" alt="Home" class="home-icon" />
+    <a href="index.html" class="home-link">
+      <img src="ALEXXBEAN_LogoWhite_300.png" alt="Home" class="home-button" />
     </a>
   </div>
 
   <div class="container">
-    <ul>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Amazon Music</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Audiomack</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Bandcamp</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Beatport</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Boomplay</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Deezer</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">iHeartRadio</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">iTunes</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Juno Music</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Napster</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Pandora</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Pitchfork</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Spotify</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Tidal</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube Music</a></li>
+    <ul class="dsp-list">
+      <li><a href="https://music.apple.com" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
+      <li><a href="https://www.amazon.com/music" target="_blank" rel="noopener noreferrer">Amazon Music</a></li>
+      <li><a href="https://audiomack.com" target="_blank" rel="noopener noreferrer">Audiomack</a></li>
+      <li><a href="https://bandcamp.com" target="_blank" rel="noopener noreferrer">Bandcamp</a></li>
+      <li><a href="https://beatport.com" target="_blank" rel="noopener noreferrer">Beatport</a></li>
+      <li><a href="https://deezer.com" target="_blank" rel="noopener noreferrer">Deezer</a></li>
+      <li><a href="https://music.apple.com/us/browse" target="_blank" rel="noopener noreferrer">iTunes</a></li>
+      <li><a href="https://junodownload.com" target="_blank" rel="noopener noreferrer">Juno Music</a></li>
+      <li><a href="https://music.google.com" target="_blank" rel="noopener noreferrer">Google Play Music</a></li>
+      <li><a href="https://music.tidal.com" target="_blank" rel="noopener noreferrer">Tidal</a></li>
+      <li><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+      <li><a href="https://music.youtube.com" target="_blank" rel="noopener noreferrer">YouTube Music</a></li>
+      <li><a href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
+      <li><a href="https://pandora.com" target="_blank" rel="noopener noreferrer">Pandora</a></li>
+      <li><a href="https://iheart.com" target="_blank" rel="noopener noreferrer">iHeartRadio</a></li>
+      <li><a href="https://anghami.com" target="_blank" rel="noopener noreferrer">Anghami</a></li>
+      <li><a href="https://napster.com" target="_blank" rel="noopener noreferrer">Napster</a></li>
+      <li><a href="https://shazam.com" target="_blank" rel="noopener noreferrer">Shazam</a></li>
+      <li><a href="https://mixcloud.com" target="_blank" rel="noopener noreferrer">Mixcloud</a></li>
+      <!-- Add more DSP placeholders below -->
+      <li><a href="#" target="_blank" rel="noopener noreferrer">Placeholder DSP 1</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer">Placeholder DSP 2</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer">Placeholder DSP 3</a></li>
     </ul>
   </div>
 
-  <div class="footer">
-    &copy;2025 Alexx
-  </div>
+  <footer class="footer">
+    &copy;<span id="year"></span> Alexx
+  </footer>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
