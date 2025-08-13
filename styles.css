@@ -1,89 +1,71 @@
 /* Global styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Press Start 2P', cursive; /* Pixelated terminal font */
-    background-color: #000000; /* Full black background */
-    color: #FFFFFF; /* White text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    position: relative; /* To help position the top-left element */
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000000;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
 }
 
-/* Title Link (Alexx as clickable text) */
-.title-link {
-    font-size: 3rem; /* Slightly smaller to give a terminal feel */
-    text-decoration: none;
-    color: #FFFFFF; /* White text */
-    transition: color 0.3s ease, transform 0.3s ease; /* Added transform for more dramatic hover effect */
+/* Homepage Logo */
+.main-logo {
+  max-width: 300px;
+  height: auto;
 }
 
-.title-link:hover {
-    color: #808080; /* Grey for dramatic hover effect */
-    transform: scale(1.1); /* Slight zoom-in effect for hover */
+/* Music page logo top-right */
+.top-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-/* List of DSPs */
+.name-logo {
+  max-width: 120px;
+  height: auto;
+}
+
+/* DSP List */
 ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.2rem;
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+  font-family: sans-serif;
 }
 
 ul li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s ease; /* Same transition effect */
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s ease;
+  font-family: sans-serif;
 }
 
 ul li a:hover {
-    color: #808080; /* Grey on hover */
-    transform: scale(1.1); /* Zoom-in effect */
+  color: #808080;
+  transform: scale(1.1);
 }
 
-/* Footer Styles */
+/* Footer */
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-    color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color: #FFFFFF;
 }
 
-.left-footer {
-    margin-left: 20px;
-}
-
-.right-footer {
-    margin-right: 20px;
-}
-
-/* Home Text Icon Position */
-.top-left {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.home-link {
-    color: #FFFFFF; /* White text color for "home" */
-    font-size: 1rem; /* Smaller font size for "home" */
-    text-decoration: none; /* No underline */
-    font-weight: normal; /* No bold */
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.home-link:hover {
-    color: #808080; /* Grey on hover */
-    transform: scale(1.1); /* Zoom-in effect */
+.centered-footer {
+  text-align: center;
 }
