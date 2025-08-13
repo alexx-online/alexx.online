@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alexx</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alexx Music Links</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Official website for recording artist Alexx." />
+    <meta name="keywords" content="Alexx, pop-punk, alternative rock, emo rap, music links" />
+    <meta name="author" content="Alexx" />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="https://alexx.online/ALEXXBEAN_SymbolWhite_300.jpg" type="image/jpeg" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Alexx - Music Links" />
+    <meta property="og:description" content="Official website for recording artist Alexx." />
+    <meta property="og:image" content="https://alexx-online.github.io/alexx.online/ALEXXBEAN_SmiliesWhite_300.png" />
+    <meta property="og:url" content="https://alexx.online/page2.html" />
+    <meta property="og:type" content="website" />
 
-  <!-- SEO -->
-  <meta name="description" content="Official website for recording artist Alexx. Links to pop-punk, alternative rock, and emo rap music streaming platforms." />
-  <meta name="keywords" content="Alexx, music, pop-punk, alternative rock, emo rap, Apple Music, Spotify, Amazon Music, Tidal, YouTube Music" />
-  <meta name="author" content="Alexx" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Alexx - Music Links" />
+    <meta name="twitter:description" content="Official website for recording artist Alexx." />
+    <meta name="twitter:image" content="https://alexx-online.github.io/alexx.online/ALEXXBEAN_SmiliesWhite_300.png" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Alexx" />
-  <meta property="og:description" content="Official website for recording artist Alexx. Links to music streaming platforms." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://alexx.online/page2.html" />
-  <meta property="og:image" content="https://alexx.online/ALEXXBEAN_SmiliesWhite_300.png" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Alexx" />
-  <meta name="twitter:description" content="Official website for recording artist Alexx. Links to music streaming platforms." />
-  <meta name="twitter:image" content="https://alexx.online/ALEXXBEAN_SmiliesWhite_300.png" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="ALEXXBEAN_SymbolWhite_300.jpg" type="image/jpg" />
 </head>
 <body>
+    <div class="top-left">
+        <a href="/" aria-label="Go back home">
+            <img src="ALEXXBEAN_LogoWhite_300.png" alt="Home" class="home-icon" />
+        </a>
+    </div>
 
-  <div class="top-right">
-    <a href="index.html" aria-label="Go back home">
-      <img src="home-icon.png" alt="Home" class="home-icon" />
-    </a>
-  </div>
+    <div class="container">
+        <ul>
+            <li><a href="https://www.apple.com/music" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
+            <li><a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+            <li><a href="https://www.amazon.com/music" target="_blank" rel="noopener noreferrer">Amazon Music</a></li>
+            <li><a href="https://www.tidal.com" target="_blank" rel="noopener noreferrer">Tidal</a></li>
+            <li><a href="https://www.youtube.com/music" target="_blank" rel="noopener noreferrer">YouTube Music</a></li>
+        </ul>
+    </div>
 
-  <div class="container">
-    <ul>
-      <li><a href="https://www.apple.com/music" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
-      <li><a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a></li>
-      <li><a href="https://www.amazon.com/music" target="_blank" rel="noopener noreferrer">Amazon Music</a></li>
-      <li><a href="https://www.tidal.com" target="_blank" rel="noopener noreferrer">Tidal</a></li>
-      <li><a href="https://www.youtube.com/music" target="_blank" rel="noopener noreferrer">YouTube Music</a></li>
-    </ul>
-  </div>
+    <div class="footer">
+        &copy; <span id="year"></span> Alexx
+    </div>
 
-  <footer class="footer">
-    &copy; <span id="year"></span>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
+    </script>
 </body>
 </html>

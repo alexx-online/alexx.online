@@ -1,74 +1,88 @@
 /* Global styles */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Press Start 2P', cursive;
-  background-color: #000000;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  position: relative;
-  flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Homepage Logo */
-.main-logo {
-  max-width: 180px;
-  width: 100%;
-  height: auto;
+/* Container for centering content */
+.container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Music page top-right home icon */
-.top-right {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+/* Home Page symbol */
+.main-symbol {
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
 }
 
-.home-icon {
-  max-width: 40px;
-  height: auto;
-  filter: invert(100%);
-  cursor: pointer;
-}
-
-/* DSP List */
+/* Links list */
 ul {
-  list-style-type: none;
-  padding: 0;
-  font-size: 1.2rem;
-  font-family: sans-serif;
-  margin-top: 40px;
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul li {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 ul li a {
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: color 0.3s, transform 0.3s ease;
-  font-family: sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 ul li a:hover {
-  color: #808080;
-  transform: scale(1.1);
+    color: #808080;
+    transform: scale(1.1);
 }
 
-/* Footer */
+/* Footer Styles */
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 8px 0;
-  font-size: 0.75rem;
-  font-family: sans-serif;
-  color: #FFFFFF;
-  text-align: center;
-  background: transparent;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+}
+
+/* Top-left home icon */
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.home-icon {
+    max-width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Remove container on home page (index.html) for symbol link */
+.symbol-link {
+    display: inline-block;
+}
+
+/* Remove default focus outlines (optional) */
+a:focus {
+    outline: 2px solid #808080;
+    outline-offset: 2px;
 }
