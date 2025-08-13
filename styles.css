@@ -15,7 +15,8 @@ body {
 
 /* Homepage Logo */
 .main-logo {
-  max-width: 300px;
+  max-width: 200px;
+  width: 100%;
   height: auto;
 }
 
@@ -27,7 +28,8 @@ body {
 }
 
 .name-logo {
-  max-width: 120px;
+  max-width: 100px;
+  width: 100%;
   height: auto;
 }
 
@@ -60,12 +62,9 @@ ul li a:hover {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 10px;
-  font-size: 0.8rem;
+  padding: 10px 0;
+  font-size: 0.75rem;
   font-family: sans-serif;
   color: #FFFFFF;
-}
-
-.centered-footer {
   text-align: center;
 }
